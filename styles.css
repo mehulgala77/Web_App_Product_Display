@@ -109,8 +109,41 @@ body {
   overflow-y:hidden;
 }
 
+/* Turn it into a flex container when it is being displayed. */
 .lightbox.active {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+}
+
+/* Data in the Lightbox */
+.lightbox-data {
+  width: 60%;
+  position: relative;
+
+  border: 2px solid red;
+}
+
+.big-image {
+  /* Nothing here */
+}
+
+/* Thumbnails */
+.thumbnails-panel {
+  width: 30px;
+  margin: 20px;
+
+  position: fixed;
+  top: 0;
+  left: 20%;
+}
+
+.thumbnails {
+  height:40px;
+  width: 100%;
+  margin-bottom: 15px;
+
+  border: 1px solid rgba(0, 0, 0, 0.6);
+
+  cursor: pointer;
 }
