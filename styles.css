@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
 
-  height: 100vh;
+  /* height: 100vh; */
 
   font-family: 'Nova Cut', cursive;
 
@@ -23,12 +23,10 @@ body {
 /* The container */
 
 .my-container {
-  height: 97%;
+  /* height: 97%; */
   width: 80%;
 
   margin: 0 auto;
-
-  /* overflow: hidden; */
 
   display: flex;
   flex-wrap: wrap;
@@ -41,7 +39,7 @@ body {
 }
 
 .my-container .title {
-  height: 25%;
+  height: 25vh;
   margin: 0;
 
   color: white;
@@ -55,18 +53,22 @@ body {
 /* The product display grid */
 
 .display {
-  height: 75%;
+  /* height: 75%; */
+  margin-top: 30px;
 
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-column-gap: 60px;
-  grid-row-gap: 40px;
+  grid-row-gap: 40px; */
 }
 
 /* Each grid item */
 
 .product-item {
+  height: 250px;
+  margin-bottom: 40px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,7 +86,7 @@ body {
 /* Image inside grid item */
 
 .display img {
-  width: 50%;
+  width: 60%;
   height: 100%;
 
   border-radius: 5px;
@@ -92,7 +94,7 @@ body {
 
 /* Light box */
 .lightbox {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
